@@ -21,7 +21,7 @@ const Navbar = () => {
     <motion.nav 
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
+      transition={{ type: "spring", stiffness: 120, damping: 20 }}
       className={`fixed w-full z-50 transition-all duration-300 ${
         scrolled 
           ? "bg-slate-950/80 backdrop-blur-md border-b border-slate-800 shadow-lg py-2" 

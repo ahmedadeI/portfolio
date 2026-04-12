@@ -14,7 +14,7 @@ const Hero = () => {
         <motion.div 
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ type: "spring", stiffness: 100, damping: 20 }}
           className="text-center md:text-left"
         >
           <h2 className="text-xl md:text-2xl text-primary font-medium tracking-wide mb-2">Hello, I'm</h2>
@@ -63,7 +63,7 @@ const Hero = () => {
         <motion.div 
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.1 }}
           className="flex justify-center"
         >
           <div className="relative w-72 h-72 md:w-96 md:h-96">

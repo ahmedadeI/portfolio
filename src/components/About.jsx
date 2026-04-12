@@ -11,7 +11,7 @@ const About = () => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ type: "spring", stiffness: 100, damping: 20 }}
             className="text-4xl font-bold text-white mb-4"
           >
             About <span className="text-primary">Me</span>
@@ -20,7 +20,7 @@ const About = () => {
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
             viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+            transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.1 }}
             className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full"
           ></motion.div>
         </div>
@@ -30,7 +30,7 @@ const About = () => {
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ type: "spring", stiffness: 100, damping: 20 }}
             className="text-lg text-slate-400 space-y-6"
           >
             <p>
@@ -48,7 +48,7 @@ const About = () => {
             initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+            transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.1 }}
             className="bg-dark p-8 rounded-2xl border border-slate-800 shadow-xl"
           >
             <h3 className="text-2xl font-semibold text-white mb-6 border-b border-slate-700 pb-4">Professional Details</h3>

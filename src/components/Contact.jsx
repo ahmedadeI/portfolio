@@ -22,7 +22,7 @@ const Contact = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ type: "spring", stiffness: 100, damping: 20 }}
           className="text-4xl md:text-5xl font-bold text-white mb-6"
         >
           Let's Work <span className="text-primary">Together</span>
@@ -32,7 +32,7 @@ const Contact = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+          transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.1 }}
           className="text-xl text-slate-400 mb-12"
         >
           Have a project in mind or just want to say hi? I'm currently open for new opportunities. Let's build something awesome.
@@ -42,7 +42,7 @@ const Contact = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.6, delay: 0.4, ease: "backOut" }}
+          transition={{ type: "spring", stiffness: 200, damping: 15, delay: 0.2 }}
           className="flex justify-center gap-6 md:gap-8 mb-16"
         >
           {socials.map((social, index) => (
@@ -64,7 +64,7 @@ const Contact = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
+          transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.3 }}
           href="mailto:adlahmed512f@gmail.com"
           className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-primary to-accent text-white font-bold rounded-lg shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-all"
         >

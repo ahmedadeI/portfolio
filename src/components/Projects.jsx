@@ -37,7 +37,7 @@ const Projects = () => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ type: "spring", stiffness: 100, damping: 20 }}
             className="text-4xl font-bold text-white mb-4"
           >
             My <span className="text-accent">Work</span>
@@ -46,7 +46,7 @@ const Projects = () => {
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
             viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+            transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.1 }}
             className="w-24 h-1 bg-gradient-to-r from-accent to-primary mx-auto rounded-full"
           ></motion.div>
         </div>
@@ -58,7 +58,7 @@ const Projects = () => {
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.8, delay: index * 0.2, ease: "easeOut" }}
+              transition={{ type: "spring", stiffness: 100, damping: 20, delay: index * 0.1 }}
               whileHover={{ y: -10, scale: 1.02 }}
               className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl group hover:border-slate-600 transition-all duration-300"
             >
