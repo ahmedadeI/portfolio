@@ -59,17 +59,6 @@ const Contact = () => {
             </motion.a>
           ))}
         </motion.div>
-
-        <motion.a
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-50px" }}
-          transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.3 }}
-          href="mailto:adlahmed512f@gmail.com"
-          className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-primary to-accent text-white font-bold rounded-lg shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-all"
-        >
-          Say Hello 👋
-        </motion.a>
       </div>
     </section>
   );
